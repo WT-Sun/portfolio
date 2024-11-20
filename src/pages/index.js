@@ -14,12 +14,12 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} bg-gray-50 text-gray-800 min-h-screen flex flex-col items-center`}
+      className={`${geistSans.variable} ${geistMono.variable} bg-gradient-to-t from-gray-100 to-white text-gray-800 min-h-screen flex flex-col`}
     >
       {/* Navigation */}
-      <header className="w-full bg-white shadow-md py-4">
+      <header className="w-full sticky top-0 bg-white shadow-md z-10 py-4">
         <nav className="container mx-auto flex justify-between items-center px-6">
-          <h1 className="text-2xl font-bold">My Portfolio</h1>
+          <h1 className="text-2xl font-bold text-blue-600">My Portfolio</h1>
           <ul className="flex space-x-6">
             <li>
               <a href="#about" className="hover:text-blue-500">About</a>
@@ -38,18 +38,23 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-20">
+      <section className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 text-white py-20 relative overflow-hidden">
         <div className="container mx-auto text-center px-6">
-          <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+          <h1 className="text-5xl font-extrabold mb-6 transform transition-transform duration-500 hover:scale-105">
+            Welcome to My Portfolio
+          </h1>
           <p className="text-lg">
             Discover my skills, projects, and passion for software development.
           </p>
         </div>
+        {/* Decorative Circles */}
+        <div className="absolute top-0 left-0 w-40 h-40 bg-white/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-60 h-60 bg-white/10 rounded-full blur-3xl"></div>
       </section>
 
       {/* About Section */}
       <section id="about" className="container mx-auto my-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-8">About Me</h2>
+        <h2 className="text-3xl font-bold mb-8 text-blue-600">About Me</h2>
         <p className="text-lg leading-8">
           I&apos;m <strong>Wentao Sun</strong>, a software developer with expertise in web and mobile
           application development, proficient in technologies like Java, Python, Swift, and JavaScript. I
@@ -58,15 +63,26 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="w-full bg-gray-100 py-16">
+      <section id="projects" className="w-full bg-gradient-to-b from-white to-gray-100 py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-purple-600">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <div className="bg-white shadow-lg rounded-lg p-6 transition-transform duration-300 hover:scale-105">
               <h3 className="text-xl font-bold mb-2">Library Book Management System</h3>
-              <p className="text-sm text-gray-600">
-                A Java and SQLite-based system for efficient library book management.
+              <p className="text-sm text-gray-600 mb-4">
+                A feature-rich application for managing library operations. It allows users to search for books, check availability, and track lending history. Admins can manage the inventory, add or remove books, and monitor user activities.
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
+                <strong>Key Features:</strong>
+                <ul className="list-disc list-inside">
+                  <li>Search and filter books by title, author, or category.</li>
+                  <li>Track lending and return dates with user history.</li>
+                  <li>Admin dashboard for managing inventory and user accounts.</li>
+                </ul>
+              </p>
+              <p className="text-sm text-gray-500">
+                <strong>Technologies:</strong> Java, SQLite, Swing, MVC Architecture
               </p>
               <a
                 href="https://github.com/WT-Sun/library-management-system"
@@ -77,11 +93,23 @@ export default function Home() {
                 View on GitHub
               </a>
             </div>
+
             {/* Project 2 */}
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <div className="bg-white shadow-lg rounded-lg p-6 transition-transform duration-300 hover:scale-105">
               <h3 className="text-xl font-bold mb-2">Student Management System</h3>
-              <p className="text-sm text-gray-600">
-                A Java-based platform for managing student information efficiently.
+              <p className="text-sm text-gray-600 mb-4">
+                A comprehensive platform for managing student information in educational institutions. It enables administrators to add, update, delete, and retrieve student details efficiently.
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
+                <strong>Key Features:</strong>
+                <ul className="list-disc list-inside">
+                  <li>CRUD operations for student records.</li>
+                  <li>Search and filter functionality for quick data retrieval.</li>
+                  <li>User-friendly interface for data entry and editing.</li>
+                </ul>
+              </p>
+              <p className="text-sm text-gray-500">
+                <strong>Technologies:</strong> Java, MySQL, JavaFX, JDBC
               </p>
               <a
                 href="https://github.com/WT-Sun/student-management-system"
@@ -96,9 +124,10 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Skills Section */}
       <section id="skills" className="container mx-auto my-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-8">Skills</h2>
+        <h2 className="text-3xl font-bold mb-8 text-indigo-600">Skills</h2>
         <ul className="text-lg space-y-4">
           <li><strong>Programming:</strong> Java, Python, Swift, C#, JavaScript</li>
           <li><strong>Web Development:</strong> HTML, CSS, JavaScript, JQuery, PHP</li>
@@ -111,7 +140,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="w-full bg-gray-100 py-16">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
+          <h2 className="text-3xl font-bold mb-8 text-blue-600">Contact Me</h2>
           <p>Email: <a href="mailto:jacob.wtsun@gmail.com" className="text-blue-500 underline">jacob.wtsun@gmail.com</a></p>
           <p>Phone: <a href="tel:438-462-0099" className="text-blue-500 underline">438-462-0099</a></p>
           <a
