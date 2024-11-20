@@ -78,6 +78,76 @@ export default function Home() {
           </a>
         </p>
       </section>
+      {/* Skills Section */}
+      <section id="skills" className="w-full bg-gray-900 py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-blue-400 mb-8 text-center">Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Programming Languages */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Programming Languages</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Java</li>
+                <li>Python</li>
+                <li>Swift</li>
+                <li>C#</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            {/* Web Development */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Web Development</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>HTML, CSS, JavaScript</li>
+                <li>JQuery</li>
+                <li>PHP</li>
+                <li>Django (Web Framework)</li>
+              </ul>
+            </div>
+
+            {/* Mobile Development */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Mobile Development</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Android (Java, Kotlin)</li>
+                <li>iOS (Swift)</li>
+              </ul>
+            </div>
+
+            {/* Database Management */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Database Management</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+              </ul>
+            </div>
+
+            {/* Tools & Frameworks */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Tools & Frameworks</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Android Studio</li>
+                <li>Xcode</li>
+                <li>Git, GitHub</li>
+              </ul>
+            </div>
+
+            {/* Operating Systems */}
+            <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Operating Systems</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Windows</li>
+                <li>macOS</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="w-full bg-gray-900 py-16">
         <div className="container mx-auto px-6">
