@@ -84,7 +84,6 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-purple-400 mb-8">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Project 1 */}
             <div className="bg-gray-800 shadow-lg rounded-lg p-6">
               <h3 className="text-xl font-bold mb-2">Library Book Management System</h3>
               <p className="text-sm mb-4">
@@ -99,7 +98,6 @@ export default function Home() {
                 View on GitHub
               </a>
             </div>
-            {/* Project 2 */}
             <div className="bg-gray-800 shadow-lg rounded-lg p-6">
               <h3 className="text-xl font-bold mb-2">Student Management System</h3>
               <p className="text-sm mb-4">
@@ -117,63 +115,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Timeline Section */}
-      <section id="timeline" className="container mx-auto my-16 px-6">
-        <h2 className="text-4xl font-bold text-indigo-400 mb-8">Timeline</h2>
-        <div className="border-l-2 border-blue-300 pl-6 space-y-6">
-          <div>
-            <h3 className="text-lg font-bold">2022-2025</h3>
-            <p className="text-sm">Pursuing a Computer Science degree at LaSalle College.</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold">2021</h3>
-            <p className="text-sm">Developed Library Management System as a solo project.</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold">2020</h3>
-            <p className="text-sm">Created Student Management System for an educational institution.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section id="testimonials" className="w-full bg-gray-800 py-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-teal-400 mb-8">Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <blockquote className="bg-gray-700 p-6 rounded-lg">
-              <p className="text-lg italic">"Wentao is a dedicated developer with a great sense of responsibility and attention to detail."</p>
-              <cite className="block mt-4 text-sm">- John Doe, Mentor</cite>
-            </blockquote>
-            <blockquote className="bg-gray-700 p-6 rounded-lg">
-              <p className="text-lg italic">"His projects demonstrate creativity and technical expertise, making him a valuable team member."</p>
-              <cite className="block mt-4 text-sm">- Jane Smith, Colleague</cite>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="w-full bg-gray-900 py-16">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-blue-400 mb-8">Contact Me</h2>
-          <p>Email: <a href="mailto:jacob.wtsun@gmail.com" className="text-blue-300 underline">jacob.wtsun@gmail.com</a></p>
-          <p>Phone: <a href="tel:438-462-0099" className="text-blue-300 underline">438-462-0099</a></p>
-          <a
-            href="/CV.docx"
-            download
-            className="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-          >
-            Download My CV
-          </a>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="w-full bg-gray-900 text-gray-400 py-4">
-        <p className="text-center">&copy; 2024 Wentao Sun. All Rights Reserved.</p>
-      </footer>
     </div>
   );
 }
