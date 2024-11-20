@@ -51,7 +51,7 @@ export default function Home() {
       <section id="about" className="container mx-auto my-16 px-6 text-center">
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
         <p className="text-lg leading-8">
-          I'm <strong>Wentao Sun</strong>, a software developer with expertise in web and mobile
+          I&apos;m <strong>Wentao Sun</strong>, a software developer with expertise in web and mobile
           application development, proficient in technologies like Java, Python, Swift, and JavaScript. I
           aim to bring impactful solutions to dynamic teams.
         </p>
