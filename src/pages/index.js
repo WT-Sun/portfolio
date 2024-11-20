@@ -139,11 +139,11 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-teal-400 mb-8">Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <blockquote className="bg-gray-700 p-6 rounded-lg">
-              <p className="text-lg italic">"Wentao is a dedicated developer with a great sense of responsibility and attention to detail."</p>
+              <p className="text-lg italic">&quot;Wentao is a dedicated developer with a great sense of responsibility and attention to detail.&quot;</p>
               <cite className="block mt-4 text-sm">- John Doe, Mentor</cite>
             </blockquote>
             <blockquote className="bg-gray-700 p-6 rounded-lg">
-              <p className="text-lg italic">"His projects demonstrate creativity and technical expertise, making him a valuable team member."</p>
+              <p className="text-lg italic">&quot;His projects demonstrate creativity and technical expertise, making him a valuable team member.&quot;</p>
               <cite className="block mt-4 text-sm">- Jane Smith, Colleague</cite>
             </blockquote>
           </div>
@@ -170,6 +170,7 @@ export default function Home() {
       <footer className="w-full bg-gray-900 text-gray-400 py-4">
         <p className="text-center">&copy; 2024 Wentao Sun. All Rights Reserved.</p>
       </footer>
+
     </div>
 
   );
